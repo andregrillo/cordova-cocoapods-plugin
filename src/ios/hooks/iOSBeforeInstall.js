@@ -14,7 +14,7 @@ module.exports = function (context) {
             }
 
             data = data.replace("8.0", "9.3");
-            data = data.replace(" do\\n", " do\\n\\tuse_frameworks!\\n");
+            data = data.replace(" do\\n", " do\\n\\tuse_modular_headers!\\n");
             data = data.replace("Creating new Podfile in platforms/ios","Creating new Podfile in platforms/ios MY MY MY");
 
             fs.writeFile(podFile, data, 'utf8', function (err) {
